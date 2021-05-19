@@ -28,7 +28,7 @@ public class AutenticazioneController {
 	}
 	
 	@GetMapping("/Log-in")
-	public String LogIn(@RequestParam String username, String pass, String categoria){
-		return utente.LogIn(username, pass, categoria);
+	public String LogIn(@RequestParam String username, String pass, String ruolo){
+		return utente.LogIn(username, pass, ruolo);
 	}
 }

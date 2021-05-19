@@ -70,15 +70,5 @@ public class GestoreLockerService {
 		
 		return ret;
 	}
-
-
-	public String notificaPrelievo(boolean x) {
-		if(x == true)
-			return "prelievo avvenuto";
-		else
-			return "prelievo non avvenuto";
-		
-	}
-
 	
 }

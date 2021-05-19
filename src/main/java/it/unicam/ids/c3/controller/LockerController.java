@@ -43,11 +43,6 @@ public class LockerController {
 		
 	}
 	
-	@GetMapping("/NotificaPrelievo")
-	public String notificaPrelievo(@RequestParam boolean x) {
-		return locker.notificaPrelievo(x);
-	}
-	
 }
 
 class ProdottiListaRicezione{

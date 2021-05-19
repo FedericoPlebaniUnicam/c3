@@ -13,13 +13,12 @@ public class ProdottoIngrosso {
 	String categoria;
 	double prezzo;
 	int quantita;
-	double inPromozione;
 	
 	public ProdottoIngrosso() {
 		
 	}
 	
-	public ProdottoIngrosso(String categoria, String nome, double prezzo, int quantita,double inPromozione) {
+	public ProdottoIngrosso(String categoria, String nome, double prezzo, int quantita) {
 		super();
 		this.nome = nome;
 		this.categoria = categoria;

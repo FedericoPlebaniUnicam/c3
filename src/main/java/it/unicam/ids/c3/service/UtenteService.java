@@ -29,12 +29,12 @@ public class UtenteService {
 		return "Utente aggiunto con successo";
 	}
 
-	public String LogIn(String username, String pass, String categoria) {
+	public String LogIn(String username, String pass, String ruolo) {
 		List<Utente> users = utenti.findAll();
 		
-		for(Utente p : users) {
-			if(p.getUsername().equals(username) && p.getPass().equals(pass) && p.getRuolo().equals(categoria)) {
-				return "Benvenuto " +p.getNome() +" "+ p.getCognome() + " Buona giornata!";
+		for(Utente u : users) {
+			if(u.getUsername().equals(username) && u.getPass().equals(pass) && u.getRuolo().equals(ruolo)) {
+				return "Benvenuto " +u.getNome() +" "+ u.getCognome() + " Buona giornata!";
 			}
 		}
 		return "USERNAME O PASSWORD ERRATE, PER FAVORE RIPROVARE!";
